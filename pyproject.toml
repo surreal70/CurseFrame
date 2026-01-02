@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "curses-ui-framework"
+version = "0.1.0"
+description = "A Python framework for creating terminal-based user interfaces using curses"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Curses UI Framework Team"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Shells",
+    "Topic :: Terminals",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "hypothesis>=6.0",
+    "flake8>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/curses-ui-framework/curses-ui-framework"
+Repository = "https://github.com/curses-ui-framework/curses-ui-framework"
+Issues = "https://github.com/curses-ui-framework/curses-ui-framework/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
