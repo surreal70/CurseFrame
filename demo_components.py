@@ -50,7 +50,7 @@ def demo_model():
     print()
     
     # Test status
-    model.set_status("System ready | 5 users online | Last update: 2024-01-01")
+    model.set_status("System ready | 5 users online | Last update: 2025-01-02")
     print(f"Status: {model.get_status()}")
     print()
 
